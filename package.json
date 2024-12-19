@@ -1,0 +1,19 @@
+{
+  "name": "ejercicio2.2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+     "build:css": "postcss ./static/css/styles.css -o ./static/css/styles.min.css"
+  },
+  
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1"
+  }
+}
