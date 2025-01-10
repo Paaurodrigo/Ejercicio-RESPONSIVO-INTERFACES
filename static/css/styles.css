@@ -37,6 +37,16 @@ header {
     position: relative;
     margin-left: -80px;
     background-color: #dfdfdf;
+
+    @media screen and (width < 1230px) {
+        margin-left: -30px;
+        
+    }
+
+    @media screen and (width < 500px) {
+        flex-direction: column;
+        margin-left: 0;
+    }
     
 }
 
@@ -104,6 +114,15 @@ header nav ul li a {
     position: relative;
     margin-right: 50px;
 
+    @media screen and (width < 600px) {
+         margin-right: -30px;
+     } 
+
+    @media screen and (width < 500px) {
+        flex-direction: column;
+        margin-bottom: 3px;
+    }
+
 }
 
 .logomenu h1 {
@@ -125,7 +144,7 @@ header nav ul li a {
     display: flex; 
     font-weight: bold;
 
-    @media (width < 860px) {
+    @media (width < 1010px) {
           display: none; /* Oculta la lista de navegación */   
       }
 }
@@ -142,7 +161,7 @@ header nav ul li a {
 .menu-icon {
     display: none;
 
-    @media (width < 860px) {
+    @media (width < 1010px) {
         display:  inline-block; 
     }
   }
@@ -173,6 +192,10 @@ header nav ul li a {
     align-items: center; 
     color: white; 
     text-align: center; 
+
+    @media screen and (width < 500px) {
+        margin-top: 20px;
+    }
 }
 
 .sect-img1 a {
@@ -209,10 +232,19 @@ header nav ul li a {
     width: 100%; 
     background-color: #fff; 
 
-    @media (width < 677px) {
+    @media (width < 1200px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
         grid-template-rows: repeat(2, auto);
+        
+       
+    }
+
+    @media (width < 730px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: repeat(1, auto);
+        
        
     }
 }
@@ -223,15 +255,28 @@ header nav ul li a {
 
 
 .sect-des article {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
     text-align: center; 
     width: 20%; 
     
-    @media (width < 677px) {
+    @media (width < 1200px) {
        align-items: center;
        margin: auto;
+       width: 80%;
+
     }
    
 }  
+
+.sect-des div {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center; 
+}
 
 
 .sect-des h3 {
@@ -248,7 +293,7 @@ header nav ul li a {
 }
 
 .sect-des i {
-    font-size: 2em;
+    font-size: 3em;
     color:var(--background-color-orange);
     margin-right: 10px; 
 }
@@ -319,24 +364,19 @@ header nav ul li a {
     list-style: none;
     margin-bottom: 60px;
 
-    @media (width < 1200px) {
+    @media (width < 1250px) {
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
-   
-       
     }
 
-    @media (width < 900px) {
+    @media (width < 1020px) {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        
-       
+        grid-template-columns: repeat(2, 1fr);  
     }
 
     @media (width < 650px) {
         display: grid;
         grid-template-columns: repeat(1, 1fr); 
-       
     }
 
 }
@@ -345,10 +385,19 @@ header nav ul li a {
     position: relative;
     padding: 20px;
 
+    @media (width < 1020px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
     @media (width < 650px) {
-        margin: 0 auto ;
+        margin-top: 60px ;
+        align-items: center;
 
     }
+   
 
     
 }
@@ -362,6 +411,7 @@ header nav ul li a {
     width: 250px; 
     text-align: center;
     margin-top: 50px;
+
 
     @media (width < 650px) {
         margin: 0 auto ;
@@ -385,17 +435,19 @@ header nav ul li a {
 
 }
 
-.precio {
-    font-size: 15px;
-    margin-top: 0;
+.contenedor-1 ul li article .precio {
     font-weight: bold;
     color: #b58539;
-    margin-left: -150px;
+    text-align: left;
+    width: 100%;
+
 }
 
 .contenedor-1 ul li article div {
     border: 1px solid #9e9e9e;
-   
+    min-height: 260px;
+    min-width: 260px;
+
 }
 
 .contenedor-1 ul li article img  {
@@ -407,10 +459,11 @@ width: 200px;
 
 .contenedor-1 ul li article h3 {
     margin-top: 10px;
-    font-size: 17px;
-    margin-left: 25px;
+    font-size: 16px;
+    max-height: 30px;
     text-align: left;
     font-weight: bold;
+
 
 }
 
@@ -446,7 +499,7 @@ width: 200px;
     align-items: center;      
     gap: 20px;   
 
-    @media (width < 900px) {  
+    @media (width < 1100px) {  
         margin: 0 auto;
         width: 90%;
         
@@ -463,12 +516,12 @@ width: 200px;
   
 }
 
-
-.contenedor-2 article .contenido {
-    display: flex;
-    flex-direction: column;    
-    align-items: flex-start;  
+.contenedor-2 article div {
+   display: grid;
+   gap: 10px;
+  
 }
+
 
 .contenedor-2 article h3 {
     margin-bottom: 10px;      
@@ -482,6 +535,7 @@ width: 200px;
     color: white;
     border: none;
     cursor: pointer;
+    max-width: 90px;
 }
 
 
@@ -553,8 +607,9 @@ width: 200px;
     list-style: none;
     padding: 0;
 
-    @media (width < 1200px) {
-        grid-template-columns: repeat(2, 1fr); 
+    @media (width < 1360px) {
+        grid-template-columns: repeat(2,50% ); 
+        justify-content: center;
         
     }
 
@@ -574,7 +629,7 @@ width: 200px;
 
     @media (width < 1200px) {
         grid-template-columns: repeat(2, 1fr); 
-        max-width:fit-content;
+        
        
     }
 
@@ -591,10 +646,6 @@ width: 200px;
     flex-direction: column;
     align-items: center;
 
-    @media (width < 1200px) {
-        max-width:fit-content;
-       
-    }
 }
 
 .contenedor-3 ul li article img {
@@ -603,9 +654,9 @@ width: 200px;
     width: 100%;
     margin-bottom: 15px;
 
-    @media (width < 1200px) { 
-        max-width:fit-content;
-       
+    @media (width < 1360px) {
+        max-width: 400px;
+        
     }
     
 }
@@ -732,7 +783,7 @@ width: 200px;
     list-style: none; 
     padding: 0; 
 
-    @media (width < 1490px) {
+    @media (width < 1530px) {
         grid-template-columns: repeat(4, 1fr); 
         max-width:fit-content;
        
@@ -786,6 +837,7 @@ width: 200px;
     text-align: left;
     font-weight: bold;
     margin: 10px 0;
+    margin-left: 10px
 }
 
 
@@ -794,6 +846,7 @@ width: 200px;
     font-weight: normal;
     text-align: left; 
     margin: 5px 0;
+    margin-left: 10px
 }
 
 footer {
@@ -838,6 +891,19 @@ footer section {
 footer section article {
     flex: 1; 
     min-width: 180px;
+
+    @media (width < 1200px) {
+        align-items: center;
+       margin: auto;
+       width: 80%;
+        
+    }
+
+    @media (width < 750px) {
+        grid-template-columns: repeat(2, 1fr); 
+        max-width:fit-content;
+       
+    }
 }
 
 footer section article h3 {
