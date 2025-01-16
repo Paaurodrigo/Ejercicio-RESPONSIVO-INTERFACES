@@ -181,7 +181,7 @@ header nav ul li a {
 
 
 .sect-img1 {
-    background-image: url('../img/imgAire1.jpg'); 
+    background-image: url('../../static/img/imgAire1.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -542,7 +542,7 @@ width: 200px;
 
 .sect-img2 {
     margin-top: 70px;
-    background-image: url('../img/cocinaSec2.jpg'); 
+    background-image: url('../../static/img/cocinaSec2.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -725,7 +725,7 @@ width: 200px;
 
 .sect-img3 {
     margin-top: 70px;
-    background-image: url('../img/cocinaSec3.webp'); 
+    background-image: url('../../static/img/cocinaSec3.webp'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
